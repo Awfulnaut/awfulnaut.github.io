@@ -213,6 +213,7 @@ a, a:hover, a:focus {
   color: #202020;
   background: linear-gradient(135deg, #202020, #202020 150px, #f3f7f8 150px);
   border-top: 10px solid #202020;
+  border-left: 1px solid #2c3e50;
   width: calc(100% + 80px);
   transform: translateX(-40px);
   padding: 0 20px 10px;

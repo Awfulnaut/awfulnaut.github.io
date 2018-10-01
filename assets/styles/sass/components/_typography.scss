@@ -22,7 +22,8 @@ a, a:hover, a:focus {
 .section-header {
     color: $blue-1;
     background: linear-gradient(135deg, $blue-1, $blue-1 150px, $gray-2 150px);
-    border-top: 10px solid $blue-1;
+	border-top: 10px solid $blue-1;
+	border-left: 1px solid $blue-2;
     width: calc(100% + 80px);
     transform: translateX(-40px);
     padding: 0 20px 10px;
