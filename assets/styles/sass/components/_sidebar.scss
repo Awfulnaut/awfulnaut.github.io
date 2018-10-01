@@ -168,15 +168,23 @@
 
                 &:after {
                     content: "";
-                    color: $blue-3;
+                    background-color: $blue-3;
                     width: 2px;
-                    height: 65px;
+                    height: 28px;
                     position: absolute;
-                    top: 34px;
-                    left: -23px;
+                    top: 37px;
+                    left: -44px;
+
+                    @include respond(md) {
+                        height: 52px;
+                        left: -23px;
+                    }
                 }
             }
 
+            &:last-child .icon:after {
+                display: none;
+            }
             &:hover .icon:before {
                 font-weight: 300;
             }
@@ -209,7 +217,7 @@
 ----------------------------------------------------- */
 #content {
     width: calc(100% - 165px);
-    padding: 70px 40px 40px;
+    padding: 0px 40px 40px;
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
