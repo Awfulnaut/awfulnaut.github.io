@@ -40,7 +40,7 @@
 
     & .sidebar__nav {
         list-style-type: none;
-        height: 95vh;
+        height: 100%;
         padding-left: 82px;
         display: flex;
         flex-direction: column;
@@ -48,55 +48,81 @@
 
         li {
             position: relative;
-            margin-bottom: 25px;
+            margin-bottom: 40px;
+            &:last-child { margin-bottom: 0; }
 
-            &:before {
-                content: "\f111";
-                @include fontawesome(400);
-                position: absolute;
-                top: 8px;
-                left: -35px;
-                font-size: 25px;
+            & .icon {
+                color: $blue-3;
+                background-color: $blue-1;
+
+                &:before {
+                    @include fontawesome(400);
+                    position: absolute;
+                    top: 8px;
+                    left: -72px;
+                    width: 25px;
+                    font-size: 25px;
+                    text-align: center;
+                    cursor: pointer;
+
+                    @include respond(md) {
+                        left: -35px;
+                    }
+                }
+
+                &.about:before {
+                    content: "\f3e0"; // portrait
+                }
+                &.skills:before {
+                    content: "\f085"; // cogs
+                }
+                &.projects:before {
+                    content: "\f0b1"; // project-diagram
+                }
+                &.hobbies:before {
+                    content: "\f12e"; // puzzle-piece
+                }
+                &.contact:before {
+                    content: "\f2bb"; // address-card
+                }
+
+                &:after {
+                    content: "";
+                    color: $blue-3;
+                    width: 2px;
+                    height: 65px;
+                    position: absolute;
+                    top: 34px;
+                    left: -23px;
+                }
             }
 
-            &:hover:before {
-                font-weight: 700;
+            &:hover .icon:before {
+                font-weight: 300;
+            }
+
+            & .text {
+                display: none;
+
+                @include respond(md) {
+                    display: inline;
+                }
             }
         }
 
         a {
-            color: $blue-3;
+            color: #fff;
             padding: 10px;
             display: block;
             font-weight: 400;
     
             &:hover, &:focus {
                 font-weight: 400;
-                color: #fff;
+                color: $blue-3;
             }
         }
     }
 }
-
-// ul.CTAs {
-//     padding: 20px;
-// }
-
-// ul.CTAs a {
-//     text-align: center;
-//     font-size: 0.9em !important;
-//     display: block;
-//     border-radius: 5px;
-//     margin-bottom: 5px;
-// }
-// a.download {
-//     background: #fff;
-//     color: $blue-1;
-// }
-// a.article, a.article:hover {
-//     color: #fff !important;
-// }
-
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -109,9 +135,21 @@
     position: absolute;
     top: 0;
     right: 0;
+    -webkit-box-shadow: inset 10px 0px 20px 0px rgba($blue-1,0.5);
+    -moz-box-shadow: inset 10px 0px 20px 0px rgba($blue-1,0.5);
+    box-shadow: inset 10px 0px 20px 0px rgba($blue-1,0.5);
+
+    // @include respond(md) {
+    //     -webkit-box-shadow: inset 10px 0px 20px 0px rgba($blue-1,0.5);
+    //     -moz-box-shadow: inset 10px 0px 20px 0px rgba($blue-1,0.5);
+    //     box-shadow: inset 10px 0px 20px 0px rgba($blue-1,0.5);
+    // }
 }
 #content.active {
     width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 
@@ -120,16 +158,15 @@
 ----------------------------------------------------- */
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -200px;
+        width: 50px;
+        // margin-left: -200px;
     }
     #sidebar.active {
         margin-left: 0;
     }
     #content {
-        width: 100%;
-    }
-    #content.active {
-        width: calc(100% - 200px);
+        // width: 100%;
+        width: calc(100% - 50px);
     }
     #sidebarCollapse span {
         display: none;
