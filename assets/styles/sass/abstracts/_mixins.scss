@@ -1,0 +1,11 @@
+@mixin fontawesome($fa_weight) {
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: $fa_weight;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+}
