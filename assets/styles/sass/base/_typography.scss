@@ -13,10 +13,17 @@ p {
     color: #999;
 }
 
+a {
+	color: $blue-3;
+	text-decoration: underline;
+
+	&:hover, &:focus {
+		color: $blue-2;
+	}
+}
+
 a, a:hover, a:focus {
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .section-header {
@@ -24,8 +31,8 @@ a, a:hover, a:focus {
     background: linear-gradient(135deg, $blue-1, $blue-1 150px, $gray-2 150px);
 	border-top: 10px solid $blue-1;
 	border-left: 1px solid $blue-2;
-    width: calc(100% + 80px);
-    transform: translateX(-40px);
+    width: calc(100% + 120px);
+    transform: translateX(-60px);
     padding: 0 20px 10px;
     margin-bottom: 40px;
     clear: both;
@@ -43,14 +50,14 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 28;
+	font-size: 28px;
 	@media (min-width: 768px) {
 		font-size: 32px;
 	}
 }
 
 h3, .h3 {
-	font-size: 24;
+	font-size: 24px;
 	line-height: 28px;
 	@media (min-width: 768px) {
 		font-size: 28px;
