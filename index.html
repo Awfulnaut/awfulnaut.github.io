@@ -75,7 +75,7 @@
         <!-- Page Content -->
         <div id="content">
 
-            <section id="about">
+            <section id="about" class="about">
                 <div class="section-header">
                     <h1 class="h2">About me</h1>
                 </div>
@@ -88,7 +88,7 @@
                 </div>
             </section>
 
-            <section id="skills">
+            <section id="skills" class="skills">
                 <div class="section-header">
                     <h2>Skills &amp; Experience</h2>
                 </div>
@@ -120,13 +120,28 @@
                 </div>
             </section>
 
-            <section id="projects">
+            <section id="projects" class="projects">
                 <div class="section-header">
                     <h2>Projects</h2>
                 </div>
                 <div class="projects__content">
-                    <div class="projects-cards">
-                        <img src="assets/images/star-wars-bg.jpg" alt="">
+                    <div class="projects__card">
+                        <p class="projects__title">Lost Pet Finder</p>
+                        <img src="assets/images/pet-finder.jpg" alt="Lost pet info from Google Maps pin">
+                        <div class="projects__buttons">
+                            <a href="#" class="btn btn--source"><span>Source</span></a>
+                            <a href="#" class="btn btn--view"><span>View</span></a>
+                        </div>
+                        <p class="projects__description">Locate lost pets, or list your own lost pet using Google Maps.</p>
+                    </div>
+                    <div class="projects__card">
+                        <p class="projects__title">Star Wars RPG</p>
+                        <img src="assets/images/star-wars-bg.jpg" alt="Jedi battle scene">
+                        <div class="projects__buttons">
+                            <a href="#" class="btn btn--source"><span>Source</span></a>
+                            <a href="#" class="btn btn--view"><span>View</span></a>
+                        </div>
+                        <p class="projects__description">Pick your favorite character and battle your way to victory in this jQuery based RPG.</p>
                     </div>
                 </div>
             </section>
