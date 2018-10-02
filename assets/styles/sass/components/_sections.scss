@@ -7,28 +7,46 @@
 #about {
 
   .section-header {
-    background: linear-gradient(135deg, $blue-1, $blue-1 175px, $gray-2 175px);
+    background: linear-gradient(135deg, $blue-1, $blue-1 150px, $gray-2 150px);
+
+    @include respond(md) {
+      background: linear-gradient(135deg, $blue-1, $blue-1 175px, $gray-2 175px);
+    }
   }
 
   & .about__content {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
 
   .profile-img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    margin-right: 15px;
+    display: block;
+    margin: 0 auto 25px;
     border: 5px solid transparent;
     box-shadow: 0 0 0 3px $blue-3;
+    float: none;
+    -webkit-shape-outside:circle(50%);
+    shape-outside:circle(50%);
+    transform: translateX(-15px);
+
+    @include respond(sm) {
+      float: left;
+      margin: 0;
+    }
   }
 }
 
 #skills {
 
   .section-header {
-    background: linear-gradient(135deg, $blue-1, $blue-1 275px, $gray-2 275px);
+    background: linear-gradient(135deg, $blue-1, $blue-1 235px, $gray-2 235px);
+
+    @include respond(md) {
+      background: linear-gradient(135deg, $blue-1, $blue-1 260px, $gray-2 260px);
+    }
   }
 
   & .skills {

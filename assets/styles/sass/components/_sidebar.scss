@@ -130,6 +130,7 @@
             position: relative;
             margin-bottom: 40px;
             &:last-child { margin-bottom: 0; }
+            & a { text-decoration: none; }
 
             & .icon {
                 color: $blue-3;
@@ -217,7 +218,7 @@
 ----------------------------------------------------- */
 #content {
     width: calc(100% - 165px);
-    padding: 0px 40px 40px;
+    padding: 0px 60px 40px 60px;
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
