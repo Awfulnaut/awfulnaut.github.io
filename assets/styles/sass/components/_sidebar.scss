@@ -229,7 +229,7 @@
     transition: all 0.3s;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 50px;
     -webkit-box-shadow: inset 5px 0px 10px 0px rgba($blue-1,0.5);
     -moz-box-shadow: inset 5px 0px 10px 0px rgba($blue-1,0.5);
     box-shadow: inset 5px 0px 10px 0px rgba($blue-1,0.5);
@@ -243,6 +243,7 @@
 
     @include respond(md) {
         width: calc(100% - 165px); 
+        left: 165px;
         padding: 0 60px 40px;
         -webkit-box-shadow: inset 10px 0px 20px 0px rgba($blue-1,0.5);
         -moz-box-shadow: inset 10px 0px 20px 0px rgba($blue-1,0.5);

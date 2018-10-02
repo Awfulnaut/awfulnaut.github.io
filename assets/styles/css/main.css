@@ -277,7 +277,7 @@ h6, .h6 {
   transition: all 0.3s;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 50px;
   -webkit-box-shadow: inset 5px 0px 10px 0px rgba(32, 32, 32, 0.5);
   -moz-box-shadow: inset 5px 0px 10px 0px rgba(32, 32, 32, 0.5);
   box-shadow: inset 5px 0px 10px 0px rgba(32, 32, 32, 0.5); }
@@ -289,6 +289,7 @@ h6, .h6 {
   @media only screen and (min-width: 768px) {
     #content {
       width: calc(100% - 165px);
+      left: 165px;
       padding: 0 60px 40px;
       -webkit-box-shadow: inset 10px 0px 20px 0px rgba(32, 32, 32, 0.5);
       -moz-box-shadow: inset 10px 0px 20px 0px rgba(32, 32, 32, 0.5);
@@ -297,12 +298,12 @@ h6, .h6 {
 #content section {
   padding-bottom: 40px; }
 
-#about .section-header {
+.about .section-header {
   background: linear-gradient(135deg, #202020, #202020 150px, #f3f7f8 150px); }
   @media only screen and (min-width: 768px) {
-    #about .section-header {
+    .about .section-header {
       background: linear-gradient(135deg, #202020, #202020 175px, #f3f7f8 175px); } }
-#about .profile-img {
+.about .profile-img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -314,36 +315,91 @@ h6, .h6 {
   -webkit-shape-outside: circle(50%);
   shape-outside: circle(50%); }
   @media only screen and (min-width: 576px) {
-    #about .profile-img {
+    .about .profile-img {
       float: left;
       margin: 0;
       transform: translateX(-15px); } }
 
-#skills .section-header {
+.skills .section-header {
   background: linear-gradient(135deg, #202020, #202020 235px, #f3f7f8 235px); }
   @media only screen and (min-width: 768px) {
-    #skills .section-header {
+    .skills .section-header {
       background: linear-gradient(135deg, #202020, #202020 260px, #f3f7f8 260px); } }
-#skills .skills__content {
+.skills__content {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; }
-#skills .skills__card {
-  margin-right: 35px;
-  margin-bottom: 35px; }
-  #skills .skills__card img {
+  flex-wrap: wrap;
+  justify-content: space-around; }
+.skills__card {
+  margin: 0 15px 30px; }
+  .skills__card img {
     height: 90px;
     margin-bottom: 15px; }
     @media only screen and (min-width: 576px) {
-      #skills .skills__card img {
-        height: 135px;
-        margin-right: 10px; } }
+      .skills__card img {
+        height: 135px; } }
     @media only screen and (min-width: 768px) {
-      #skills .skills__card img {
-        height: 175px;
-        margin-right: 15px; } }
-  #skills .skills__card p {
+      .skills__card img {
+        height: 175px; } }
+  .skills__card p {
     text-align: center;
     font-size: 20px; }
+
+.projects__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: calc(100% + 60px);
+  transform: translateX(-30px); }
+  @media only screen and (min-width: 576px) {
+    .projects__content {
+      width: 100%;
+      transform: none; } }
+.projects__card {
+  width: 240px;
+  margin: 0 15px; }
+  @media only screen and (min-width: 400px) {
+    .projects__card {
+      width: 300px; } }
+  .projects__card img {
+    width: 100%;
+    border: 3px solid #2c3e50; }
+.projects__title {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 2px;
+  margin-bottom: 0;
+  color: #f3f7f8;
+  background: linear-gradient(135deg, transparent 0px, transparent 26px, #2c3e50 26px, #2c3e50 60%, transparent 60%), linear-gradient(45deg, transparent 0px, transparent 40%, #2c3e50 40%, #2c3e50 170px, transparent 170px); }
+  @media only screen and (min-width: 400px) {
+    .projects__title {
+      background: linear-gradient(135deg, transparent 0px, transparent 26px, #2c3e50 26px, #2c3e50 60%, transparent 60%), linear-gradient(45deg, transparent 0px, transparent 40%, #2c3e50 40%, #2c3e50 213px, transparent 213px); } }
+.projects__buttons {
+  width: 86%;
+  display: flex;
+  margin: 5px auto; }
+  .projects__buttons .btn {
+    width: 50%;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    transform: skewX(-45deg); }
+    .projects__buttons .btn span {
+      display: block;
+      transform: skewX(45deg); }
+    .projects__buttons .btn--source {
+      background-color: #2c3e50;
+      border-right: 2px solid transparent; }
+      .projects__buttons .btn--source:hover, .projects__buttons .btn--source:focus {
+        background-color: #21c2f8;
+        border-color: #2c3e50; }
+    .projects__buttons .btn--view {
+      color: #202020;
+      background-color: #21c2f8;
+      border-left: 2px solid transparent; }
+      .projects__buttons .btn--view:hover, .projects__buttons .btn--view:focus {
+        color: #21c2f8;
+        background-color: #2c3e50;
+        border-color: #21c2f8; }
 
 /*# sourceMappingURL=main.css.map */
