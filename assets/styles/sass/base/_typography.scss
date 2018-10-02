@@ -31,11 +31,16 @@ a, a:hover, a:focus {
     background: linear-gradient(135deg, $blue-1, $blue-1 150px, $gray-2 150px);
 	border-top: 10px solid $blue-1;
 	border-left: 1px solid $blue-2;
-    width: calc(100% + 120px);
-    transform: translateX(-60px);
+    width: calc(100% + 60px);
+    transform: translateX(-30px);
     padding: 0 20px 10px;
     margin-bottom: 40px;
-    clear: both;
+	clear: both;
+	
+	@include respond(md) {
+		transform: translateX(-60px);
+		width: calc(100% + 120px);
+	}
   
     h1, h2 {
       color: $gray-2;
