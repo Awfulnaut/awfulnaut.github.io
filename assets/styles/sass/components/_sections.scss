@@ -5,12 +5,39 @@
 }
 
 .about {
+  position: relative;
 
   .section-header {
-    background: linear-gradient(135deg, $blue-1, $blue-1 150px, $gray-2 150px);
+    background: linear-gradient(135deg, $blue-1, $blue-1 135px, $gray-2 135px);
 
     @include respond(md) {
-      background: linear-gradient(135deg, $blue-1, $blue-1 175px, $gray-2 175px);
+      background: linear-gradient(135deg, $blue-1, $blue-1 155px, $gray-2 155px);
+    }
+  }
+
+  .follow {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(sm) {
+      right: 0;
+    }
+
+    .linkedin-button {
+      display: block;
+      background-color: #252829;
+      padding: 5px 10px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+
+      img {
+        display: block;
+        margin: auto;
+      }
     }
   }
 

@@ -43,7 +43,8 @@ a, a:hover, a:focus {
 	}
   
     h1, h2 {
-      color: $gray-2;
+	  color: $gray-2;
+	  margin-bottom: 0;
     }
 }
 
@@ -55,9 +56,9 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 28px;
+	font-size: 26px;
 	@media (min-width: 768px) {
-		font-size: 32px;
+		font-size: 30px;
 	}
 }
 

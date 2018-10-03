@@ -158,19 +158,19 @@
                     }
                 }
 
-                &.about:before {
+                &.about-btn:before {
                     content: "\f3e0"; // portrait
                 }
-                &.skills:before {
+                &.skills-btn:before {
                     content: "\f085"; // cogs
                 }
-                &.projects:before {
+                &.projects-btn:before {
                     content: "\f0b1"; // project-diagram
                 }
-                &.hobbies:before {
+                &.hobbies-btn:before {
                     content: "\f12e"; // puzzle-piece
                 }
-                &.contact:before {
+                &.contact-btn:before {
                     content: "\f2bb"; // address-card
                 }
 

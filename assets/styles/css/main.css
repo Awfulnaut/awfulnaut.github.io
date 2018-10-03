@@ -34,7 +34,8 @@ a, a:hover, a:focus {
       transform: translateX(-60px);
       width: calc(100% + 120px); } }
   .section-header h1, .section-header h2 {
-    color: #f3f7f8; }
+    color: #f3f7f8;
+    margin-bottom: 0; }
 
 h1, .h1 {
   font-size: 32px; }
@@ -43,10 +44,10 @@ h1, .h1 {
       font-size: 36px; } }
 
 h2, .h2 {
-  font-size: 28px; }
+  font-size: 26px; }
   @media (min-width: 768px) {
     h2, .h2 {
-      font-size: 32px; } }
+      font-size: 30px; } }
 
 h3, .h3 {
   font-size: 24px;
@@ -228,15 +229,15 @@ h6, .h6 {
           @media only screen and (min-width: 768px) {
             #sidebar .sidebar__nav li .icon:before {
               left: -35px; } }
-        #sidebar .sidebar__nav li .icon.about:before {
+        #sidebar .sidebar__nav li .icon.about-btn:before {
           content: "\f3e0"; }
-        #sidebar .sidebar__nav li .icon.skills:before {
+        #sidebar .sidebar__nav li .icon.skills-btn:before {
           content: "\f085"; }
-        #sidebar .sidebar__nav li .icon.projects:before {
+        #sidebar .sidebar__nav li .icon.projects-btn:before {
           content: "\f0b1"; }
-        #sidebar .sidebar__nav li .icon.hobbies:before {
+        #sidebar .sidebar__nav li .icon.hobbies-btn:before {
           content: "\f12e"; }
-        #sidebar .sidebar__nav li .icon.contact:before {
+        #sidebar .sidebar__nav li .icon.contact-btn:before {
           content: "\f2bb"; }
         #sidebar .sidebar__nav li .icon:after {
           content: "";
@@ -298,27 +299,48 @@ h6, .h6 {
 #content section {
   padding-bottom: 40px; }
 
-.about .section-header {
-  background: linear-gradient(135deg, #202020, #202020 150px, #f3f7f8 150px); }
-  @media only screen and (min-width: 768px) {
-    .about .section-header {
-      background: linear-gradient(135deg, #202020, #202020 175px, #f3f7f8 175px); } }
-.about .profile-img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 25px;
-  border: 5px solid transparent;
-  box-shadow: 0 0 0 3px #21c2f8;
-  float: none;
-  -webkit-shape-outside: circle(50%);
-  shape-outside: circle(50%); }
-  @media only screen and (min-width: 576px) {
-    .about .profile-img {
-      float: left;
-      margin: 0;
-      transform: translateX(-15px); } }
+.about {
+  position: relative; }
+  .about .section-header {
+    background: linear-gradient(135deg, #202020, #202020 135px, #f3f7f8 135px); }
+    @media only screen and (min-width: 768px) {
+      .about .section-header {
+        background: linear-gradient(135deg, #202020, #202020 155px, #f3f7f8 155px); } }
+  .about .follow {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .about .follow {
+        right: 0; } }
+    .about .follow .linkedin-button {
+      display: block;
+      background-color: #252829;
+      padding: 5px 10px;
+      border-radius: 3px;
+      margin-bottom: 5px; }
+      .about .follow .linkedin-button img {
+        display: block;
+        margin: auto; }
+  .about .profile-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 25px;
+    border: 5px solid transparent;
+    box-shadow: 0 0 0 3px #21c2f8;
+    float: none;
+    -webkit-shape-outside: circle(50%);
+    shape-outside: circle(50%); }
+    @media only screen and (min-width: 576px) {
+      .about .profile-img {
+        float: left;
+        margin: 0;
+        transform: translateX(-15px); } }
 
 .skills .section-header {
   background: linear-gradient(135deg, #202020, #202020 235px, #f3f7f8 235px); }
