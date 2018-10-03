@@ -46,4 +46,10 @@ $(document).ready(function () {
       }
     }
   });
+
+  $('.hobbies__slider').slick({
+    autoplay: false,
+    arrows: true,
+    dots: true
+  });
 });
