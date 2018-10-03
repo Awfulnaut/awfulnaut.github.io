@@ -90,11 +90,11 @@
       margin-bottom: 15px;
 
       @include respond(sm) {
-        height: 135px;
+        height: 110px;
       }
 
       @include respond(md) {
-        height: 175px;
+        height: 150px;
       }
     }
 
