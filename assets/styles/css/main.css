@@ -357,7 +357,7 @@ h6, .h6 {
       transform: none; } }
 .projects__card {
   width: 240px;
-  margin: 0 15px; }
+  margin: 0 15px 15px; }
   @media only screen and (min-width: 400px) {
     .projects__card {
       width: 300px; } }
@@ -370,10 +370,10 @@ h6, .h6 {
   padding-top: 2px;
   margin-bottom: 0;
   color: #f3f7f8;
-  background: linear-gradient(135deg, transparent 0px, transparent 26px, #2c3e50 26px, #2c3e50 60%, transparent 60%), linear-gradient(45deg, transparent 0px, transparent 40%, #2c3e50 40%, #2c3e50 170px, transparent 170px); }
+  background: linear-gradient(135deg, transparent 0px, transparent 24px, #2c3e50 24px, #2c3e50 60%, transparent 60%), linear-gradient(45deg, transparent 0px, transparent 40%, #2c3e50 40%, #2c3e50 170px, transparent 170px); }
   @media only screen and (min-width: 400px) {
     .projects__title {
-      background: linear-gradient(135deg, transparent 0px, transparent 26px, #2c3e50 26px, #2c3e50 60%, transparent 60%), linear-gradient(45deg, transparent 0px, transparent 40%, #2c3e50 40%, #2c3e50 213px, transparent 213px); } }
+      background: linear-gradient(135deg, transparent 0px, transparent 24px, #2c3e50 24px, #2c3e50 60%, transparent 60%), linear-gradient(45deg, transparent 0px, transparent 40%, #2c3e50 40%, #2c3e50 213px, transparent 213px); } }
 .projects__buttons {
   width: 86%;
   display: flex;
@@ -383,23 +383,97 @@ h6, .h6 {
     border-radius: 0;
     border: none;
     text-decoration: none;
-    transform: skewX(-45deg); }
-    .projects__buttons .btn span {
-      display: block;
-      transform: skewX(45deg); }
+    transform: skewX(-45deg);
+    border: 2px solid transparent; }
     .projects__buttons .btn--source {
-      background-color: #2c3e50;
-      border-right: 2px solid transparent; }
+      background-color: #2c3e50; }
       .projects__buttons .btn--source:hover, .projects__buttons .btn--source:focus {
         background-color: #21c2f8;
         border-color: #2c3e50; }
     .projects__buttons .btn--view {
       color: #202020;
-      background-color: #21c2f8;
-      border-left: 2px solid transparent; }
+      background-color: #21c2f8; }
       .projects__buttons .btn--view:hover, .projects__buttons .btn--view:focus {
         color: #21c2f8;
         background-color: #2c3e50;
         border-color: #21c2f8; }
+    .projects__buttons .btn span {
+      display: block;
+      transform: skewX(45deg); }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

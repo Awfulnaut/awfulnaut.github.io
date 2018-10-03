@@ -15,13 +15,10 @@
         crossorigin="anonymous">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/css/slick.css"/>
     <!-- Main styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/css/main.css" />
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -79,6 +76,10 @@
                 <div class="section-header">
                     <h1 class="h2">About me</h1>
                 </div>
+                <div class="follow">
+                    <a class="github-button" href="https://github.com/Awfulnaut" data-size="large" aria-label="Follow @Awfulnaut on GitHub">@Awfulnaut</a>
+                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="cadinmcqueen"><a class="LI-simple-link" href='https://www.linkedin.com/in/cadinmcqueen?trk=profile-badge'>Cadin McQueen</a></div>
+                </div>
                 <div class="about__content">
                     <img class="profile-img" src="assets/images/profile-image.jpg" alt="Photo of Cadin McQueen">
                     <div>
@@ -126,22 +127,31 @@
                 </div>
                 <div class="projects__content">
                     <div class="projects__card">
-                        <p class="projects__title">Lost Pet Finder</p>
+                        <h3 class="projects__title">Lost Pet Finder</h3>
                         <img src="assets/images/pet-finder.jpg" alt="Lost pet info from Google Maps pin">
                         <div class="projects__buttons">
-                            <a href="#" class="btn btn--source"><span>Source</span></a>
-                            <a href="#" class="btn btn--view"><span>View</span></a>
+                            <a href="https://github.com/Awfulnaut/lost-pet-finder" class="btn btn--source"><span>Source</span></a>
+                            <a href="https://awfulnaut.github.io/lost-pet-finder/" class="btn btn--view"><span>View</span></a>
                         </div>
                         <p class="projects__description">Locate lost pets, or list your own lost pet using Google Maps.</p>
                     </div>
                     <div class="projects__card">
-                        <p class="projects__title">Star Wars RPG</p>
+                        <h3 class="projects__title">Star Wars RPG</h3>
                         <img src="assets/images/star-wars-bg.jpg" alt="Jedi battle scene">
                         <div class="projects__buttons">
-                            <a href="#" class="btn btn--source"><span>Source</span></a>
-                            <a href="#" class="btn btn--view"><span>View</span></a>
+                            <a href="https://github.com/Awfulnaut/star-wars-rpg" class="btn btn--source"><span>Source</span></a>
+                            <a href="https://awfulnaut.github.io/star-wars-rpg/" class="btn btn--view"><span>View</span></a>
                         </div>
                         <p class="projects__description">Pick your favorite character and battle your way to victory in this jQuery based RPG.</p>
+                    </div>
+                    <div class="projects__card">
+                        <h3 class="projects__title">Word Guess</h3>
+                        <img src="assets/images/pikachu.jpg" alt="Lost pet info from Google Maps pin">
+                        <div class="projects__buttons">
+                            <a href="https://github.com/Awfulnaut/word-guess-game" class="btn btn--source"><span>Source</span></a>
+                            <a href="https://awfulnaut.github.io/word-guess-game/" class="btn btn--view"><span>View</span></a>
+                        </div>
+                        <p class="projects__description">Guess the Pokemon name in this hangman style word guess game.</p>
                     </div>
                 </div>
             </section>
@@ -151,11 +161,20 @@
                     <h2>Hobbies</h2>
                 </div>
                 <div class="hobbies__content">
-                    <p>Learning new technology was inherent in my youth. I dabbled in manually hosting my own Minecraft server (back when it was the hot, new thing) and I modded the hell out of it. There were several others that I was actively involved in, but nothing really stuck until I started mapping custom charts for Beat Saber. Now, I am actively involved in the Beat Saber modding community. Below are a few of the custom charts I made.</p>
+                    <p>Learning new technology was inherent in my youth. I dabbled in manually hosting my own Minecraft server (back when it was the hot, new thing) and I modded the hell out of it. There were several other modding communities that I was actively involved in, but nothing really stuck until I started mapping custom charts for Beat Saber. Now, I am actively involved in the Beat Saber modding community. Below are a few of the custom charts I've made.</p>
+                    <div class="hobbies__slider">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0wXfAtwtZH4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vCbgECLTxpU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZS8YwPvKLgw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
-                <div class="hobbies__content">
-
-                </div>
+                
             </section>
 
             <section id="contact">
@@ -163,20 +182,30 @@
                     <h2>Contact</h2>
                 </div>
                 <div class="contact__content">
-
+                    
                 </div>
             </section>
         </div>
     </div>
 
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <!-- Github button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- LinkedIn button -->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>

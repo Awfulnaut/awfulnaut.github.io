@@ -93,7 +93,7 @@
   }
   &__card {
     width: 240px;
-    margin: 0 15px;
+    margin: 0 15px 15px;
 
     @include respond(xs) {
       width: 300px;
@@ -102,7 +102,6 @@
     img {
       width: 100%;
       border: 3px solid $blue-2;
-      // border-radius: 4px;
     }
   }
 
@@ -113,12 +112,12 @@
     margin-bottom: 0;
     color: $gray-2;
     background: 
-          linear-gradient(135deg, transparent 0px, transparent 26px, $blue-2 26px, $blue-2 60%, transparent 60%),
+          linear-gradient(135deg, transparent 0px, transparent 24px, $blue-2 24px, $blue-2 60%, transparent 60%),
           linear-gradient(45deg, transparent 0px, transparent 40%, $blue-2 40%, $blue-2 170px, transparent 170px);
     
     @include respond(xs) {
       background: 
-          linear-gradient(135deg, transparent 0px, transparent 26px, $blue-2 26px, $blue-2 60%, transparent 60%),
+          linear-gradient(135deg, transparent 0px, transparent 24px, $blue-2 24px, $blue-2 60%, transparent 60%),
           linear-gradient(45deg, transparent 0px, transparent 40%, $blue-2 40%, $blue-2 213px, transparent 213px);
     }
   }
@@ -134,15 +133,10 @@
       border: none;
       text-decoration: none;
       transform: skewX(-45deg);
-
-      span {
-        display: block;
-        transform: skewX(45deg);
-      }
+      border: 2px solid transparent;
 
       &--source {
         background-color: $blue-2;
-        border-right: 2px solid transparent;
 
         &:hover, &:focus {
           background-color: $blue-3;
@@ -153,13 +147,17 @@
       &--view {
         color: $blue-1;
         background-color: $blue-3;
-        border-left: 2px solid transparent;
 
         &:hover, &:focus {
           color: $blue-3;
           background-color: $blue-2;
           border-color: $blue-3;
         }
+      }
+
+      span {
+        display: block;
+        transform: skewX(45deg);
       }
     }
   }
