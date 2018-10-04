@@ -210,8 +210,8 @@ h6, .h6 {
         color: #21c2f8;
         background-color: #202020; }
         #sidebar .sidebar__nav li .icon:before {
-          font-family: 'Font Awesome 5 Pro';
-          font-weight: 400;
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 300;
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           display: inline-block;
@@ -230,15 +230,11 @@ h6, .h6 {
             #sidebar .sidebar__nav li .icon:before {
               left: -35px; } }
         #sidebar .sidebar__nav li .icon.about-btn:before {
-          content: "\f3e0"; }
-        #sidebar .sidebar__nav li .icon.skills-btn:before {
-          content: "\f085"; }
-        #sidebar .sidebar__nav li .icon.projects-btn:before {
-          content: "\f0b1"; }
-        #sidebar .sidebar__nav li .icon.hobbies-btn:before {
-          content: "\f12e"; }
-        #sidebar .sidebar__nav li .icon.contact-btn:before {
           content: "\f2bb"; }
+        #sidebar .sidebar__nav li .icon.skills-btn:before {
+          content: "\f005"; }
+        #sidebar .sidebar__nav li .icon.projects-btn:before {
+          content: "\f07c"; }
         #sidebar .sidebar__nav li .icon:after {
           content: "";
           background-color: #21c2f8;
@@ -249,11 +245,11 @@ h6, .h6 {
           left: -44px; }
           @media only screen and (min-width: 768px) {
             #sidebar .sidebar__nav li .icon:after {
-              left: -23px; } }
+              left: -22px; } }
       #sidebar .sidebar__nav li:last-child .icon:after {
         display: none; }
       #sidebar .sidebar__nav li:hover .icon:before {
-        font-weight: 300; }
+        font-weight: 600; }
       #sidebar .sidebar__nav li .text {
         visibility: hidden; }
         @media only screen and (min-width: 768px) {
