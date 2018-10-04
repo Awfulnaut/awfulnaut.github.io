@@ -144,7 +144,7 @@
                 background-color: $blue-1;
 
                 &:before {
-                    @include fontawesome(400);
+                    @include fontawesome(300);
                     position: absolute;
                     top: 8px;
                     left: -56px;
@@ -159,19 +159,13 @@
                 }
 
                 &.about-btn:before {
-                    content: "\f3e0"; // portrait
+                    content: "\f2bb"; // address card
                 }
                 &.skills-btn:before {
-                    content: "\f085"; // cogs
+                    content: "\f005"; // star
                 }
                 &.projects-btn:before {
-                    content: "\f0b1"; // project-diagram
-                }
-                &.hobbies-btn:before {
-                    content: "\f12e"; // puzzle-piece
-                }
-                &.contact-btn:before {
-                    content: "\f2bb"; // address-card
+                    content: "\f07c"; // folder
                 }
 
                 &:after {
@@ -184,7 +178,7 @@
                     left: -44px;
 
                     @include respond(md) {
-                        left: -23px;
+                        left: -22px;
                     }
                 }
             }
@@ -193,7 +187,7 @@
                 display: none;
             }
             &:hover .icon:before {
-                font-weight: 300;
+                font-weight: 600;
             }
 
             & .text {
