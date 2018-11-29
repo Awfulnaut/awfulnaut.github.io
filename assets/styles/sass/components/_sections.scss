@@ -180,6 +180,10 @@
     background: 
           linear-gradient(135deg, transparent 0px, transparent 21px, $blue-2 21px, $blue-2 60%, transparent 60%),
           linear-gradient(45deg, transparent 0px, transparent 40%, $blue-2 40%, $blue-2 170px, transparent 170px);
+
+    &--long {
+      font-size: 18px;
+    }
     
     @include respond(xs) {
       background: 
