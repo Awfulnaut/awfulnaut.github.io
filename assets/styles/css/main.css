@@ -316,6 +316,8 @@ h6, .h6 {
   margin-bottom: 0;
   color: #f3f7f8;
   background: linear-gradient(135deg, transparent 0px, transparent 21px, #2c3e50 21px, #2c3e50 60%, transparent 60%), linear-gradient(45deg, transparent 0px, transparent 40%, #2c3e50 40%, #2c3e50 170px, transparent 170px); }
+  .projects__title--long {
+    font-size: 18px; }
   @media only screen and (min-width: 400px) {
     .projects__title {
       background: linear-gradient(135deg, transparent 0px, transparent 21px, #2c3e50 21px, #2c3e50 60%, transparent 60%), linear-gradient(45deg, transparent 0px, transparent 40%, #2c3e50 40%, #2c3e50 213px, transparent 213px); } }
