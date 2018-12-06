@@ -10,8 +10,49 @@
 
 hr {
   width: 60%;
-  margin: 25px auto;
+  margin: 25px auto 15px;
   clear: both;
+}
+
+.follow {
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.follow__icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 32px;
+
+  &--bottom {
+    width: 150px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .fa-linkedin {
+    color: #0077b5;
+  }
+
+  .fa-github-square {
+    color: #333;
+  }
+
+  .fa-twitter-square {
+    color: #1da1f2;
+  }
+
+  a:hover {
+    transform: scale(1.2);
+    transition: .1s;
+  }
 }
 
 .about {
@@ -56,33 +97,6 @@ hr {
         display: none;
       }
     }
-  }
-
-  .follow {
-    display: flex;
-    justify-content: space-around;
-    width: 100px;
-    margin: 0 auto;
-
-    font-size: 32px;
-
-    .fa-linkedin {
-      color: #0077b5;
-    }
-
-    .fa-github-square {
-      color: #333;
-    }
-
-    .fa-twitter-square {
-      color: #1da1f2;
-    }
-
-    a:hover {
-      transform: scale(1.2);
-      transition: .1s;
-    }
-
   }
 
   .profile-img {
@@ -146,11 +160,13 @@ hr {
 }
 
 .projects {
+
+  hr {
+    margin-bottom: 25px;
+  }
+
   &__content {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
-    padding: 0 150px;
+    padding: 0;
     width: calc(100% + 60px);
     transform: translateX(-30px);
 
@@ -158,14 +174,24 @@ hr {
       width: 100%;
       transform: none;
     }
+
+    @include respond(lg) {
+      width: 100%;
+      padding: 0 100px;
+      transform: none;
+    }
   }
   &__card {
     width: 240px;
-    float: left;
-    margin: 0 20px 25px 0;
+    margin: 0 auto;
 
     @include respond(xs) {
       width: 300px;
+    }
+
+    @include respond(lg) {
+      margin: 0 20px 25px 0;
+      float: left;
     }
 
     img {
@@ -242,6 +268,10 @@ hr {
   }
 
   &__description {
-    padding-top: 36px;
+    padding: 10px 20px 0;
+
+    @include respond(lg) {
+      padding: 36px 0 0 0;
+    }
   }
 }
