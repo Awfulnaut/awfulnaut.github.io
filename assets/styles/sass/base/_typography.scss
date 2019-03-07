@@ -15,10 +15,12 @@ p {
 
 a {
 	color: $blue-3;
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight: 500;
 
 	&:hover, &:focus {
 		color: $blue-2;
+		text-decoration: underline;
 	}
 }
 
