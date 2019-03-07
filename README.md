@@ -1,5 +1,4 @@
 # Cadin McQueen's Portfolio
-![screenshot of portfolio](assets/images/screenshot.png)
 
 This portfolio was built from scratch using jQuery and Sass and features my contact information, skills, and a few notable projects.
 
